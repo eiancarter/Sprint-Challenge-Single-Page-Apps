@@ -3,9 +3,9 @@ import Header from "./components/Header.js";
 import { Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import CharacterList from './components/CharacterList';
-import CharacterCard from './components/CharacterCard';
+import SearchForm from './components/SearchForm';
 import WelcomePage from './components/WelcomePage';
+import Pagination from './components/Pagination';
 
 
 export default function App() {
@@ -17,12 +17,10 @@ export default function App() {
           <WelcomePage />
         </Route>
         <Route path='/characters'>
-          <CharacterList/>
-        </Route>
-        <Route path='/characters/:id'>
-          <CharacterCard items={CharacterList} />
+          <SearchForm />
         </Route>
       </Switch>
+      <Pagination />
     </main>
   );
 }
