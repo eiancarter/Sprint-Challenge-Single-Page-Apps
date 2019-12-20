@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header.js";
 import { Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import CharacterList from './components/CharacterList';
 import CharacterCard from './components/CharacterCard';

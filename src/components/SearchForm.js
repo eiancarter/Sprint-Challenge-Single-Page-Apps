@@ -21,7 +21,7 @@ export default function SearchForm() {
       return character.name.toLowerCase().includes(searchTerm.toLowerCase())
     });
     setSearchResults(results);
-  }, [searchTerm]);
+  }, [searchTerm, characters]);
 
   const handleChange = event => {
     setSearchTerm(event.target.value);
@@ -42,7 +42,7 @@ export default function SearchForm() {
       <div className='character-list'>
         <ul>
           {searchResults.map(character => (
-            <CharacterCard name={character.name} status={character.status} />
+              <CharacterCard name={character.name} status={character.status} />
           ))}
         </ul>
       </div>
