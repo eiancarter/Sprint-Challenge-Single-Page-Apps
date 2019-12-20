@@ -27,7 +27,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client Side Routing is great for small applications because you can manipulate the dom without having to 
+reload the page. This improves UX and speed of the application.
 
 ## Project Set Up
 

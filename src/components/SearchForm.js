@@ -12,6 +12,7 @@ export default function SearchForm() {
     axios
       .get('https://rickandmortyapi.com/api/character/')
       .then(response => {
+        console.log(response.data);
         setCharacters(response.data.results);
       })
       .catch(error => {
@@ -29,8 +30,9 @@ export default function SearchForm() {
 
   return (
     <section className="search-form">
-      <form>
+      <form className='search-field'>
         <label htmlFor='name'>Search:</label>
+        <br></br>
         <input 
           id='name' 
           type='text' 
@@ -42,7 +44,7 @@ export default function SearchForm() {
       <div className='character-list'>
         <ul>
           {searchResults.map(character => (
-              <CharacterCard name={character.name} status={character.status} />
+              <CharacterCard image={character.image} name={character.name} status={character.status} />
           ))}
         </ul>
       </div>

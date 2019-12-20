@@ -29,7 +29,7 @@ export default function CharacterList() {
       </div>
       {characters.map(character => {
         return (
-          <CharacterCard key={character.id} name={character.name} status={character.status}/>
+          <CharacterCard key={character.id} image={character.image} name={character.name} status={character.status}/>
         )
       })}
     </section>
