@@ -27,13 +27,36 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
+  padding-top: 50px;
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+  padding-bottom: 50px;
+}
 
 header h1 {
+  color: #48ab71;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+}
+
+.pagination {
+  padding-top: 50px;
+  margin: 0 auto;
+  background-color: turquoise;
+  padding-bottom: 20px;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+.character-card {
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
 }
